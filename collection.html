@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Aisha.png" type="image/png">
+    <link rel="shortcut icon" href="/Aisha.png" type="image/png">
+    <title>Collection</title>
+</head>
+<body>
+  <ul>
+    <li><a href="/index.html">Главная</a></li>
+    <li><a href="/collection.html">Каталог</a></li>
+    <li><a href="/info.html">О нас</a></li>
+    <li><a href="/contact.html">Контакты</a></li>
+</ul>
+    <div class="cloth-grid">
+        <div class="cloth-card">
+          <img src="photo_2025-04-08_22-34-28.jpg" alt="одежда">
+          <h3>Бежевая сшытые платье</h3>  
+        </div>
+        <div class="cloth-card">
+          <img src="IMG_8676.JPG" alt="одежда">
+          <h3>Синее сшытые платье</h3>
+        </div>
+        <div class="cloth-card">
+          <img src="IMG_8704.JPG" alt="одежда">
+          <h3>Чёрная сшытые платье</h3>
+        </div>
+          <style>
+           body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Чтобы элементы переносились на новую строку на маленьких экранах */
+    justify-content: center; /* Центрируем на мобильных */
+}
+ul li {
+    margin: 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+ul li a:hover {
+    color: #007bff;
+}
+
+.cloth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Можно уменьшить min-width */
+    gap: 20px;
+}
+
+.cloth-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cloth-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cloth-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+}
+
+.cloth-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .cloth-card h3 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .cloth-grid {
+        gap: 15px;
+    }
+}
+
+          </style>
+</body>
+</html>
